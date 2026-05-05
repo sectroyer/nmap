@@ -1,5 +1,9 @@
 #Nmap Changelog ($Id$); -*-text-*-
 
+o [NSE][GH#3250][GH#3206] Fix assertion failures in cases where connect or send
+  returns immediately with a status other than ERROR, e.g. TIMEOUT or CANCELED.
+  [Daniel Miller]
+
 o Fix a crash when writing long CPE strings to output. Reported by Harshit
   Gupta. [Daniel Miller]
 
